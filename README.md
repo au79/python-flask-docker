@@ -4,23 +4,17 @@ Basic Python Flask app in Docker which prints the hostname and IP of the contain
 ### Build application
 Build the Docker image manually by cloning the Git repo.
 ```
-$ git clone https://github.com/lvthillo/python-flask-docker.git
-$ docker build -t lvthillo/python-flask-docker .
-```
-
-### Download precreated image
-You can also just download the existing image from [DockerHub](https://hub.docker.com/r/lvthillo/python-flask-docker/).
-```
-docker pull lvthillo/python-flask-docker
+$ git clone https://github.com/au79/python-flask-docker.git
+$ docker build -t au79/python-flask-docker .
 ```
 
 ### Run the container
 Create a container from the image.
 ```
-$ docker run --name my-container -d -p 8080:8080 lvthillo/python-flask-docker
+$ docker run --name my-container -d -p 5000:5000 au79/python-flask-docker
 ```
 
-Now visit http://localhost:8080
+Now visit http://localhost:5000
 ```
  The hostname of the container is 6095273a4e9b and its IP is 172.17.0.2. 
 ```
